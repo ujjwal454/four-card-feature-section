@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--Very-dark : hsl(234, 12%, 34%);
+--Grayish : hsl(229, 6%, 66%);
+--Very : hsl(0, 0%, 98%);
+}
+.container{
+    background:var(--White);
+    margin: 50px 20px;
+    padding: 0 0 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.main-content .top-container .main-heading h1{
+    font-weight:400;
+    color: var(--Grayish);
+    font-size: 2.5rem;
+}
+.main-content .top-container .main-heading h1 span{
+    display: block;
+    font-weight: 600;
+    color:#000;
+    font-size:2.5rem;
+}
+.main-content .top-container .main-pera p{
+    margin: 2rem 0rem 2rem 0rem;
+    font-size:1.5rem;
+    font-weight: 400;
+    color:#000;
+    opacity: 0.8;
+}
+.container .card-container{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.container .card-container .card {
+    background:var(--very);
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    box-shadow: 2.5px 2.5px 15px var(--Grayish);
+    max-width:350px;
+}
+.container .card-container .card .heading h1{
+    font-size: 2rem;
+    padding: 2rem 0rem 1rem 2rem;
+}
+.container .card-container .card .body p{
+    padding: 0rem 0rem 2rem 2rem;
+    font-size: 1.2rem;
+}
+.container .card-container .card .icon svg{
+    display: block;
+    margin-left:auto;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    margin-right:4rem;
+}
+.container .card-container .card-1{
+    border-top:5px solid var(--Cyan);
+    /* width: 350px     ; */
+}
+.container .card-container .card-2{
+    border-top:5px solid var(--Red);
+}
+.container .card-container .card-3{
+    border-top: 5px solid var(--Orange);
+}
+.container .card-container .card-4{
+    border-top:5px solid var(--Blue);
+}
+@media(min-width:1100px){
+    .container .card-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        width: 350px;
+        margin: 2rem;
+    }
+
+}
